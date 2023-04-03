@@ -61,13 +61,41 @@ font-family: 'Poppins', sans-serif;
 }
 .main_img {
   width: 550px;
+  opacity: 0;
 }
-.p01 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 96px;
+
+.typewriter .p01 {
   color: var(--font-black);
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.08em solid var(--color-main); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.08em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end forwards 10;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+    letter-spacing: 0.08em;
+  }
+  to {
+    width: 100%;
+    letter-spacing: 0.08em;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-main);
+  }
 }
 .p02 {
   font-family: "Pretendard";
@@ -75,9 +103,9 @@ font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 64px;
   line-height: 77px;
-  /* identical to box height */
-
+  opacity: 0;
   color: var(--font-black);
+  transform: translateX(-200%);
 }
 .p02 span {
   color: var(--color-main);
@@ -85,44 +113,42 @@ font-family: 'Poppins', sans-serif;
 .main_v_right {
   position: relative;
 }
-.main_img {
-  /* position: relative;
-  z-index: 9; */
-}
+
 .move_img {
   position: absolute;
+  opacity: 0;
 }
 #move01 {
   left: -135px;
   top: 65px;
-  animation: fadeInFromLeft01 0.5s linear forwards,
-    floating01 4.5s ease-in-out 0.5s infinite;
+  animation: fadeInFromLeft01 0.7s linear 8s forwards,
+    floating01 4.5s ease-in-out 9s infinite;
 }
 #move02 {
   right: -40px;
   left: auto;
   top: 126px;
-  animation: fadeInFromLeft02 0.5s linear forwards,
-    floating02 4.5s ease-in-out 0.5s infinite;
+  animation: fadeInFromLeft02 0.5s linear 8s forwards,
+    floating02 4.5s ease-in-out 8.7s infinite;
 }
 #move03 {
   top: 300px;
   left: -160px;
-  animation: fadeInFromLeft03 0.3s linear forwards,
-    floating03 4.5s ease-in-out 0.3s infinite;
+  animation: fadeInFromLeft03 0.3s linear 8s forwards,
+    floating03 4.5s ease-in-out 8.7s infinite;
 }
 #move04 {
   right: -60px;
   left: auto;
   top: 380px;
-  animation: fadeInFromLeft04 0.5s linear forwards,
-    floating04 4.5s ease-in-out 0.5s infinite;
+  animation: fadeInFromLeft04 0.5s linear 8s forwards,
+    floating04 4.5s ease-in-out 9s infinite;
 }
 #move05 {
   top: 530px;
   left: -95px;
-  animation: fadeInFromLeft05 0.5s linear forwards,
-    floating05 4.5s ease-in-out 0.5s infinite;
+  animation: fadeInFromLeft05 0.5s linear 8s forwards,
+    floating05 4.5s ease-in-out 9s infinite;
 }
 @keyframes fadeInFromLeft01 {
   from {
