@@ -121,33 +121,33 @@ font-family: 'Poppins', sans-serif;
 #move01 {
   left: -135px;
   top: 65px;
-  animation: fadeInFromLeft01 0.7s linear 8s forwards,
+  animation: fadeInFromLeft01 0.7s linear 7.5s forwards,
     floating01 4.5s ease-in-out 9s infinite;
 }
 #move02 {
   right: -40px;
   left: auto;
   top: 126px;
-  animation: fadeInFromLeft02 0.5s linear 8s forwards,
+  animation: fadeInFromLeft02 0.7s linear 7.5s forwards,
     floating02 4.5s ease-in-out 8.7s infinite;
 }
 #move03 {
   top: 300px;
   left: -160px;
-  animation: fadeInFromLeft03 0.3s linear 8s forwards,
+  animation: fadeInFromLeft03 0.8s linear 7.5s forwards,
     floating03 4.5s ease-in-out 8.7s infinite;
 }
 #move04 {
   right: -60px;
   left: auto;
   top: 380px;
-  animation: fadeInFromLeft04 0.5s linear 8s forwards,
+  animation: fadeInFromLeft04 0.9s linear 7.5s forwards,
     floating04 4.5s ease-in-out 9s infinite;
 }
 #move05 {
   top: 530px;
   left: -95px;
-  animation: fadeInFromLeft05 0.5s linear 8s forwards,
+  animation: fadeInFromLeft05 0.7s linear 7.5s forwards,
     floating05 4.5s ease-in-out 9s infinite;
 }
 @keyframes fadeInFromLeft01 {
